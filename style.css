@@ -1,0 +1,156 @@
+body {
+    background: #3D47AF;
+    /* #4f74ff; */
+}
+
+#main {
+    margin: 20px;
+}
+
+#header {
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+}
+
+.fa-bars {
+    font-size: 35px;
+    color: #BBC2D8;
+}
+
+.second-sub-header input::placeholder {
+    color: #BBC2D8;
+}
+
+#filter {
+    border: 0px;
+    background: #3D47AF;
+    border-bottom: 2px solid #BBC2D8;
+    color: #BBC2D8;
+}
+
+.h2 {
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    color: white;
+}
+
+
+.cat {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background: #0A155A;
+    width: 200px;
+    padding: 20px;
+}
+
+.category {
+    color: #BBC2D8;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.tasknum {
+    color: #BBC2D8;
+    margin-bottom: 5px;
+}
+
+.taskcategory {
+    font-size: 25px;
+    margin-top: 0px;
+    color: white;
+}
+
+.hr {
+    background-color: #D103fc;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.tasks ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.todaytask {
+    color: #BBC2D8;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.tasklist {
+
+}
+
+
+.taskitem {
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background: #0A155A;
+    padding: 15px;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background: #0A155A;
+    border-radius: 20px;
+    border: 2px solid #D103fc;
+}
+
+.tasklist .taskitem span{
+    flex: 1;
+}
+
+.tasklist .taskitem button {
+    padding: 0px;
+    margin: 0px;
+    border:0px;
+    background-color: #0A155A;
+}
+.fa-trash {
+    color: red;
+}
+
+.bottom-plus {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 100%;
+    margin: 20px;
+}
+
+.additem {
+    float: right;
+    /* margin-right: 10px; */
+    border: 0px;
+    padding: 15px 20px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    background-color: #D103fc;
+    border-radius: 40px;
+}
+
+.fa-plus {
+    font-size: 20px;
+    color: white;
+}
+
+/* @media (min-width: 600px) {
+    body {
+        background: green;
+    }
+} */

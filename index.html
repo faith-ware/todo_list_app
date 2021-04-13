@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+  <div id="main">
+
+    <!-- Header -->
+    <div id="header" class="header">
+      <div class="first-sub-header">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="second-sub-header">
+        <input type="text" class="form-control" id="filter" placeholder="Search Items...">
+      </div>
+    </div>
+
+    <div class="h2">
+      <h2>What's up, Faith!</h2>
+    </div>
+
+    <!-- Category and number of tasks -->
+    <p class="category">Category</p>
+    <div class="cat">
+      <p class="tasknum"></p>
+      <P class="taskcategory">Personal</P>
+      <hr class="hr">
+    </div>
+  
+
+  <!-- Tasks -->
+
+  <div class="tasks">
+    <p class="todaytask">Today's Tasks</p>
+    <ul class="tasklist" id="items">
+      <li class="taskitem">
+        <div class="circle"></div>
+        <span>Go to gym</span>
+        <button class="thebtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+      </li>
+      <li class="taskitem">
+        <div class="circle"></div>
+        <span>Go to sch</span>
+        <button class="thebtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bottom-plus">
+   <button class="additem"><i class="fa fa-plus" aria-hidden="true"></i></button> 
+  </div>
+
+</div>
+  <script src="todo.js"></script>
+</body>
+</html>
