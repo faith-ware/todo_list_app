@@ -17,6 +17,9 @@ additem.addEventListener("click", addTask);
 // Add delete event
 taskList.addEventListener("click", deleteItem);
 
+// Add edit event
+taskList.addEventListener("click", editItem);
+
 // Add filter event
 filter.addEventListener("keyup", filtersearch);
 function addTask(e) {
@@ -36,6 +39,16 @@ function addTask(e) {
         var span = document.createElement("span");
         span.textContent = newItem;
 
+        // create edit button
+        var editButton = document.createElement("button");
+        editButton.className = "editbutton";
+        var editicon = document.createElement("i");
+        editicon.className = "fa fa-pencil-square-o";
+        editicon.ariaHidden = "true";
+
+        editButton.appendChild(editicon);
+
+
         //create button
         var button = document.createElement("button");
         button.className = "thebtn";
@@ -45,12 +58,12 @@ function addTask(e) {
 
         // add fatrash to button
         button.appendChild(faTrash);
-        console.log(button);
 
         // Create task item
 
         taskitem.appendChild(circle);
         taskitem.appendChild(span);
+        taskitem.appendChild(editButton);
         taskitem.appendChild(button);
         console.log(taskitem);
 
@@ -97,3 +110,16 @@ function filtersearch(e) {
     })
 }
 
+
+// Edit item
+
+function editItem(e) {
+    if(e.target.classList.contains("fa-pencil-square-o")) {
+        var theText = e.target.parentElement.parentElement.children[1].textContent;
+        console.log(theText);
+        var theInput = prompt("Edit", theText); 
+        if (theInput) {
+            e.target.parentElement.parentElement.children[1].textContent = theInput
+        }
+    }
+}
